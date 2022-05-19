@@ -2,7 +2,7 @@
 const COLOR_NAME =  document.querySelector("#description");
 const CHANGE_BUTTON = document.querySelector('#changer');
 
-const colorList = ["#F2F2F2", "#E5E5E5", "#292929"]
+const colorList = ["#F2F2F2", "#C7C7C7", "#292929"]
 
 //Index contador
 let i=0;
