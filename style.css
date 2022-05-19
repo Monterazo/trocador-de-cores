@@ -22,7 +22,6 @@ body {
 }
 
 main{
-
     background-color: #E5E5E5;
     width: 940px;
     height: 437px;
@@ -30,7 +29,7 @@ main{
     border-radius: 8px;
     display: flex;
     align-items: center;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 h1{
