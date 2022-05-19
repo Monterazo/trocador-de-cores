@@ -6,6 +6,7 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/* Responsive at any size. */
 body {
     max-width: 100vw;
     min-height: 100vh;
@@ -21,49 +22,152 @@ body {
     margin-bottom: 24.12109vh;
 }
 
-main{
-    background-color: #E5E5E5;
-    width: 940px;
-    height: 437px;
-    border: 3px solid #51E678;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+/*Large screens */
+@media (min-width: 1020px) {
+    main{
+        background-color: #E5E5E5;
+        width: 940px;
+        height: 437px;
+        border: 3px solid #51E678;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1{
+        margin-top: 32px;
+        margin-bottom:0px;
+        font-size: 42px;
+        color: rgba(41, 41, 41, 0.8);
+        font-weight: 700;
+    }
+
+    main:nth-child(2){
+        font-size: 64px;
+        color: #292929;
+        font-weight: 800;
+        margin-top: 0px;
+
+    }
+
+    button{
+        margin-top: 32px;
+        width: 412px;
+        height: 64px;
+        background: #51E678;
+        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        border:0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    button p{
+        font-size: 32px;
+        color: #292929;
+        font-weight: 700;
+    }
 }
 
-h1{
-    margin-top: 32px;
-    margin-bottom:0px;
-    font-size: 42px;
-    color: rgba(41, 41, 41, 0.8);
-    font-weight: 700;
+/*Tablet screens */
+@media (max-width: 1019px) and (min-width:691px) {
+    main{
+        background-color: #E5E5E5;
+        width: 640px;
+        height: 437px;
+        border: 3px solid #51E678;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1{
+        margin-top: 32px;
+        margin-bottom:0px;
+        font-size: 42px;
+        color: rgba(41, 41, 41, 0.8);
+        font-weight: 700;
+    }
+
+    main:nth-child(2){
+        font-size: calc(64px* 0.75);
+        color: #292929;
+        font-weight: 800;
+        margin-top: 0px;
+
+    }
+
+    button{
+        margin-top: 32px;
+        width: calc(412* 0.75px);
+        height: 64px;
+        background: #51E678;
+        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        border:0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    button p{
+        font-size: 32px;
+        color: #292929;
+        font-weight: 700;
+    }
 }
 
-main:nth-child(2){
-    font-size: 64px;
-    color: #292929;
-    font-weight: 800;
-    margin-top: 0px;
+/*Mobile screens */
+@media (max-width: 690px) {
+    main{
+        background-color: #E5E5E5;
+        width: 310px;
+        height: calc(437px*0.8);
+        border: 3px solid #51E678;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
 
-}
+    h1{
+        margin-top: 32px;
+        margin-bottom:0px;
+        font-size: calc(41*0.75px);
+        color: rgba(41, 41, 41, 0.8);
+        font-weight: 700;
+    }
 
-button{
-    margin-top: 32px;
-    width: 412px;
-    height: 64px;
-    background: #51E678;
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    border:0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
+    main:nth-child(2){
+        font-size: calc(64px* 0.45);
+        color: #292929;
+        font-weight: 800;
+        margin-top: 0px;
 
-button p{
-    font-size: 32px;
-    color: #292929;
-    font-weight: 700;
+    }
+
+    button{
+        margin-top: 32px;
+        width: calc(412px* 0.5);
+        height: 64px;
+        background: #51E678;
+        box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+        border:0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    button p{
+        font-size: 24px;
+        color: #292929;
+        font-weight: 700;
+    }
 }
